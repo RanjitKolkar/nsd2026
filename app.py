@@ -136,14 +136,39 @@ st.success("🏆 **Winner Shield will be awarded to the Best School**")
 
 # ================= REGISTRATION =================
 st.subheader("📝 Registration")
-
+# ================= SIMPLE BIG BUTTON =================
 st.markdown("""
-<a href="https://forms.gle/ckh9yXvdWREnFgrCA" target="_blank">
-<button>
-📌 Register Here
-</button>
-</a>
+<style>
+.simple-register-btn {
+    text-align: center;
+    margin: 30px 0;
+}
+.simple-register-btn a {
+    text-decoration: none;
+}
+.simple-register-btn button {
+    background-color: #0056b3;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.simple-register-btn button:hover {
+    background-color: #003f7f;
+}
+</style>
+
+<div class="simple-register-btn">
+    <a href="https://forms.gle/ckh9yXvdWREnFgrCA" target="_blank">
+        <button>📌 Register Now</button>
+    </a>
+</div>
 """, unsafe_allow_html=True)
+
+
 
 st.info("👉 Registration link will be updated soon.")
 
